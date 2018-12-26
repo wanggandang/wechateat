@@ -4,10 +4,8 @@ import com.itcast.manager.base.BaseResult;
 import com.itcast.manager.entity.User;
 import com.itcast.manager.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.*;
 
-import javax.rmi.CORBA.Util;
 import java.util.List;
 
 @RestController
