@@ -1,6 +1,7 @@
 package com.itcast.manager.utils;
 
-import com.imooc.enums.CodeEnum;
+
+import com.itcast.manager.enums.CodeEnum;
 
 /**
  * Created by dang
