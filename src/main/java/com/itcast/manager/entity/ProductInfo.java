@@ -1,8 +1,9 @@
 package com.itcast.manager.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.imooc.enums.ProductStatusEnum;
-import com.imooc.utils.EnumUtil;
+import com.itcast.manager.base.BaseEntity;
+import com.itcast.manager.enums.ProductStatusEnum;
+import com.itcast.manager.utils.EnumUtil;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 
@@ -19,7 +20,7 @@ import java.util.Date;
 @Entity
 @Data
 @DynamicUpdate
-public class ProductInfo {
+public class ProductInfo extends BaseEntity{
 
     @Id
     private String productId;
@@ -45,9 +46,7 @@ public class ProductInfo {
     /** 类目编号. */
     private Integer categoryType;
 
-    private Date createTime;
 
-    private Date updateTime;
 
     @JsonIgnore
     public ProductStatusEnum getProductStatusEnum() {

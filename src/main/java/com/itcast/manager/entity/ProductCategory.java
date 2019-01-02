@@ -1,5 +1,6 @@
 package com.itcast.manager.entity;
 
+import com.itcast.manager.base.BaseEntity;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 
@@ -16,7 +17,7 @@ import java.util.Date;
 @Entity
 @DynamicUpdate
 @Data
-public class ProductCategory {
+public class ProductCategory extends BaseEntity{
 
     /** 类目id. */
     @Id
@@ -29,9 +30,7 @@ public class ProductCategory {
     /** 类目编号. */
     private Integer categoryType;
 
-    private Date createTime;
 
-    private Date updateTime;
 
     public ProductCategory() {
     }

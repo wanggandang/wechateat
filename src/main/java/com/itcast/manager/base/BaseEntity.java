@@ -13,9 +13,7 @@ import java.util.Date;
 @Getter
 @Setter
 public abstract class BaseEntity  {
-    @JsonIgnore//表示返回值不会出现此字段
     private Date createTime;
-    @JsonIgnore
     private Date updateTime;
 
     /**
