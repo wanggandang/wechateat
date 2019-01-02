@@ -1,0 +1,43 @@
+package com.itcast.manager.service.impl;
+
+
+import com.itcast.manager.entity.ProductCategory;
+import com.itcast.manager.repository.ProductCategoryRepository;
+import com.itcast.manager.service.CategoryService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+/**
+ * 类目
+ * Created by 廖师兄
+ * 2017-05-09 10:16
+ */
+@Service
+public class CategoryServiceImpl implements CategoryService {
+
+    @Autowired
+    private ProductCategoryRepository repository;
+
+    @Override
+    public ProductCategory findOne(Integer categoryId) {
+        return repository.findOne(categoryId);
+    }
+
+    @Override
+    public List<ProductCategory> findAll() {
+        return repository.findAll();
+    }
+
+    @Override
+    public List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryTypeList) {
+        return repository.findByCategoryTypeIn(categoryTypeList);
+    }
+
+    @Override
+    public ProductCategory save(ProductCategory productCategory) {
+        return repository.save(productCategory);
+    }
+}

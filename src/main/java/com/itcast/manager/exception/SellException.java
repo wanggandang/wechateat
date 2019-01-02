@@ -1,6 +1,7 @@
 package com.itcast.manager.exception;
 
-import com.imooc.enums.ResultEnum;
+
+import com.itcast.manager.enums.ResultEnum;
 
 /**
  * Created by dang

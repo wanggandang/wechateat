@@ -1,6 +1,6 @@
 package com.itcast.manager.utils;
 
-import com.imooc.VO.ResultVO;
+import com.itcast.manager.VO.ResultVO;
 
 /**
  * Created by dang
